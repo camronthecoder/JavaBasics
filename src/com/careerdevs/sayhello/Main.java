@@ -11,9 +11,7 @@ public class Main {
         System.out.println("What is your name ?");
         Scanner scanner = new Scanner(System.in);
         String userInput = scanner.nextLine();
-        System.out.println("hello " + userInput );
-
-
+        System.out.println("Hello " + userInput );
     }
     public static void whatIsYourFullName(){
         System.out.println("what is your first name?");
@@ -23,8 +21,5 @@ public class Main {
         Scanner LastScanner = new Scanner(System.in);
         String lastName = LastScanner.nextLine();
         System.out.println("full name: " + firstName + " " + lastName);
-
-
-
     }
 }
