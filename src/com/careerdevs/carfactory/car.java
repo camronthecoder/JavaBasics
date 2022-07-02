@@ -2,6 +2,8 @@ package com.careerdevs.carfactory;
 
 import java.util.Scanner;
 
+
+//create class with variables that you will need
 public class car {
     String name = " ";
     String make = " ";
@@ -10,6 +12,7 @@ public class car {
     int mileage = 0;
     float gasTankPercent = 0;
 
+//main method
     public static void main(String[] args) {
         car newCar = new car();
         Scanner scan = new Scanner(System.in);
@@ -38,7 +41,7 @@ public class car {
         float gasTankScan = scan.nextFloat();
         newCar.setGasTankPercent(gasTankScan);
 
-        newCar.printDetails();
+        newCar.createACar();
     }
 
 //setters
@@ -79,7 +82,8 @@ public class car {
         public float getGasTankPercent(){
             return this.gasTankPercent;}
 
-public void printDetails (){
+//create a car by giving car class the getter data
+public void createACar (){
     System.out.println(getName() + "'s " + getMake() + " " + getModel() + " has " + getMileage() + " miles on it. The top speed of the car is " + getSpeed() + "mph and it has a " + getGasTankPercent()+ "% full gas tank.");
 }
 }
