@@ -48,7 +48,11 @@ public class ui {
                 System.out.print(question + "\n(" + min + "- " + max + "):");
                 short input = scanner.nextShort();
                 scanner.nextLine();
-                return input;
+                if (input <= max && input >= min) {
+                    return input;
+                } else {
+                    System.out.println("input must be between" + min + "and" + max);
+                }
             } catch (Exception exception) {
                 System.out.println("input must be between" + min + "and" + max);
                 scanner.nextLine();
