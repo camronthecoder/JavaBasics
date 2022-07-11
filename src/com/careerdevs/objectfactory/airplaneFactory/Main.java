@@ -1,4 +1,4 @@
-package com.careerdevs.objectfactory.airplane;
+package com.careerdevs.objectfactory.airplaneFactory;
 
 import com.careerdevs.objectfactory.ui;
 

@@ -7,14 +7,13 @@ public class ui {
 
     public static String readString(String question) {
         while (true) {
-            System.out.println(question + "\nInput: ");
+            System.out.print(question + "\nInput: ");
             String input = scanner.nextLine();
             if (!input.trim().equals("")) {
                 return input;
             }
         }
     }
-
     public static boolean readBoolean(String question) {
         while (true) {
             try {

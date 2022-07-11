@@ -1,4 +1,4 @@
-package com.careerdevs.objectfactory.airplane;
+package com.careerdevs.objectfactory.airplaneFactory;
 //create class with all the variables
 // generate constructer
 //generate getters
