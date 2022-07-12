@@ -7,34 +7,40 @@ import java.util.ArrayList;
 
 public class sandwichMain {
     public static void main(String[] args) {
-        ArrayList<sandwich> sandWichList = new ArrayList<>();
-        System.out.println("sandwich factory\n\n");
+        ArrayList<sandwich> sandwichList = new ArrayList<>();
+        System.out.println("\n Welcome to the Sandwich Factory!\n" + "-".repeat(40));
 
         while(true){
-            System.out.println("\nMenu\n" + "_".repeat(20));
-            System.out.println("1) Create A sandwich\n");
+            System.out.println( " ".repeat(10) +"Menu" + " ".repeat(10));
+            System.out.println("1) Create A sandwich");
             System.out.println("2) View Order");
             System.out.println("3) Exit the program");
 
+            //create button options
             byte menuChoice = UI.readByte("Choose An option",(byte)1, (byte)3);
+
+            //button selection
             if (menuChoice ==3 ) break;
             else if (menuChoice == 2) {
-                if (sandWichList.size()==0){
+                if (sandwichList.size()==0){
                     System.out.println("There are no sandwiches currently in the order :(");
                     continue;
-                }}
-                else {
-                    System.out.println("Current Order");
-                    for (int i = 0; i < sandWichList.size(); i++) {
-                        System.out.println(i + 1 + ")"+ sandWichList.get(i) + "\n");}
-                    System.out.println("-".repeat(20));
-                    continue;
-                    }
-                    sandwich generatedSandwich = createSandwich();
-                    sandWichList.add(generatedSandwich);
-                    System.out.println("\n\n Created Sanwich : \n" + generatedSandwich);
                 }
-                System.out.println("\n thank you for using the program");
+
+                    System.out.println("Current Order");
+                    for (int i = 0; i < sandwichList.size(); i++) {
+                        System.out.println(i + 1 + ")"+ sandwichList.get(i) + "\n");
+                    }
+                    System.out.println("-".repeat(20));
+
+                    }else{
+
+            //option 1
+            sandwich generatedSandwich = createSandwich();
+            sandwichList.add(generatedSandwich);
+            System.out.println("\n\n Created Sandwich : " + generatedSandwich);
+        }}
+                System.out.println("\nThank you for using the Sandwich Factory");
             }
         private static sandwich createSandwich() {
         int sandwichSize = UI.readInt("What is the size of the sandwich in inches ?",0, 12);
