@@ -8,11 +8,11 @@ public class sandwich {
     private boolean cutType;
 
     public  sandwich ( int sandwichSize, String breadType, String meatType, String cheeseType, boolean cutType){
-    this.sandwichSize = sandwichSize;
-    this.breadType= breadType;
-    this.meatType = meatType;
-    this.cheeseType= cheeseType;
-    this.cutType = cutType;
+        this.sandwichSize = sandwichSize;
+        this.breadType= breadType;
+        this.meatType = meatType;
+        this.cheeseType= cheeseType;
+        this.cutType = cutType;
     }
 
     public int getSandwichSize() {

@@ -4,7 +4,7 @@ package com.careerdevs.objectfactory.airplaneFactory;
 //generate getters
 //generate tostring
 
-public class airplane {
+public class Airplane {
     //modelName, tailNumber, passengerCap, gasTank, isFlying
     private String modelName;
     private String tailNumber;
@@ -13,7 +13,7 @@ public class airplane {
     private double gasTank;
     private boolean isFlying;
 
-    public airplane(String modelName, String tailNumber, short passengerCap, int marketValue, double gasTank, boolean isFlying) {
+    public Airplane(String modelName, String tailNumber, short passengerCap, int marketValue, double gasTank, boolean isFlying) {
         this.modelName = modelName;
         this.tailNumber = tailNumber;
         this.passengerCap = passengerCap;
@@ -48,14 +48,14 @@ public class airplane {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("airplane{");
-        sb.append("modelName='").append(modelName).append('\'');
-        sb.append(", tailNumber='").append(tailNumber).append('\'');
-        sb.append(", passengerCap=").append(passengerCap);
-        sb.append(", marketValue=").append(marketValue);
-        sb.append(", gasTank=").append(gasTank);
-        sb.append(", isFlying=").append(isFlying);
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder("");
+        sb.append("Model:'").append(modelName).append('\'');
+        sb.append("\nTail Number: '").append(tailNumber).append('\'');
+        sb.append("\nPassenger Cap: '").append(passengerCap);
+        sb.append("\nMarket Value: ").append(marketValue);
+        sb.append("\nFuel %: ").append(gasTank);
+        //(condition) ? (if true, do this) : (otherwise, do this)
+        sb.append(isFlying ? "The plane is 35,000 ft in the air!" : "The plane is on the ground");
         return sb.toString();
     }
 }
