@@ -5,14 +5,14 @@ public class sandwich {
     private String breadType;
     private String meatType;
     private String cheeseType;
-    private boolean cutType;
+    private boolean isCut;
 
     public  sandwich ( int sandwichSize, String breadType, String meatType, String cheeseType, boolean cutType){
         this.sandwichSize = sandwichSize;
         this.breadType= breadType;
         this.meatType = meatType;
         this.cheeseType= cheeseType;
-        this.cutType = cutType;
+        this.isCut = cutType;
     }
 
     public int getSandwichSize() {
@@ -48,11 +48,11 @@ public class sandwich {
     }
 
     public boolean isCutType() {
-        return cutType;
+        return isCut;
     }
 
     public void setCutType(boolean cutType) {
-        this.cutType = cutType;
+        this.isCut = cutType;
     }
 
     @Override
@@ -62,7 +62,7 @@ public class sandwich {
         sb.append(", breadType='").append(breadType).append('\'');
         sb.append(", meatType='").append(meatType).append('\'');
         sb.append(", cheeseType='").append(cheeseType).append('\'');
-        sb.append(", cutType=").append(cutType);
+        sb.append(", isCut=").append(isCut);
         sb.append('}');
         return sb.toString();
     }
