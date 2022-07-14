@@ -57,13 +57,14 @@ public class sandwich {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("sandwich{");
-        sb.append("sandwichSize=").append(sandwichSize);
-        sb.append(", breadType='").append(breadType).append('\'');
-        sb.append(", meatType='").append(meatType).append('\'');
-        sb.append(", cheeseType='").append(cheeseType).append('\'');
-        sb.append(", isCut=").append(isCut);
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder("");
+        sb.append(" ").append(sandwichSize).append(" inch sandwich made with");
+        sb.append(" ").append(breadType).append(" bread");
+        sb.append(", ").append(meatType).append(" and, " );
+        sb.append("").append(cheeseType).append(" cheese.");
+        if (isCut =true){
+            sb.append("\n(Cut in half.) ");}
+        else {sb.append("\n(Not cut in half.) ");}
         return sb.toString();
     }
 }
