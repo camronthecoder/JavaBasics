@@ -1,5 +1,7 @@
 package com.careerdevs.objectfactory;
 
+import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class UI {
@@ -143,5 +145,40 @@ public class UI {
                 scanner.nextLine();
             }
         }
+    }
+    //TODO: public static ArrayList<String> readListOfStrings (question, min, max)
+
+    //TODO: public static String selectFromListOfString (question, ArrayList<String>)
+
+    public static ArrayList<String> readListOfStrings (String question, byte min, byte max) {
+        ArrayList<String>responses = new ArrayList<>();
+        System.out.println(question);
+        System.out.println("Please enter a minimum of "+ min + "inputs and a maximum of "+ max);
+        for (int i = 0; i < max ; i++) {
+            String userInput = readString("(" + (i+1) + "/" + max +")");
+            responses.add(userInput);
+            if (responses.size() == max) {
+               System.out.println ("Max number of inputs have been entered!");
+
+            }else if (responses.size() >=min && !readYesOrNo ("would you like to add more inputs?")) break;
+        }
+
+
+        System.out.println("Your inputs have been recorded.");
+        return responses;
+    }
+    public static boolean readYesOrNo(String question){
+        while (true){
+            String userInput = readString(question + "\n(y/n) ");
+            char selection = userInput.toLowerCase().charAt(0);
+            if (selection == 'y')return true;
+            if (selection == 'n')return false;
+            System.out.println("input must be Y or N.");
+            }
+        }
+
+    public static void main(String[] args) {
+        ArrayList<String>responses = readListOfStrings("Test",(byte) 1,(byte) 3);
+        System.out.println(responses);
     }
 }
