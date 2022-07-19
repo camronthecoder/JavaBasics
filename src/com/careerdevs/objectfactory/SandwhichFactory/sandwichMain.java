@@ -1,4 +1,4 @@
-package com.careerdevs.objectfactory.sanwhichFactory;
+package com.careerdevs.objectfactory.SandwhichFactory;
 
 import com.careerdevs.objectfactory.UI;
 
@@ -35,7 +35,7 @@ public class sandwichMain {
 
                     System.out.println("Current Order");
                     for (int i = 0; i < sandwichList.size(); i++) {
-                        System.out.println("Sandwich " + (i + 1) + ")"+ sandwichList.get(i) +  "\n");
+                        System.out.println("Sandwich " + (i + 1) + ")"+ sandwichList.get(i) + "\nSandwich Price : $ " +  sandwichPrice +"\n");
                     }
                 System.out.println( "Order Total: $ " + orderTotal );
 

@@ -1,4 +1,4 @@
-package com.careerdevs.objectfactory.sanwhichFactory;
+package com.careerdevs.objectfactory.SandwhichFactory;
 
 public class sandwich {
     private int sandwichSize;
