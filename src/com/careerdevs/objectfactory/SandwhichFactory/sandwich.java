@@ -58,9 +58,9 @@ public class sandwich {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("");
-        sb.append(" ").append(sandwichSize).append(" inch sandwich made with");
+        sb.append("").append(sandwichSize).append(" inch sandwich made with");
         sb.append(" ").append(breadType).append(" bread");
-        sb.append(", ").append(meatType).append(" and, " );
+        sb.append(",").append(meatType).append(" and,");
         sb.append("").append(cheeseType).append(" cheese.");
         if (isCut =true){
             sb.append("\n(Cut in half.) ");}

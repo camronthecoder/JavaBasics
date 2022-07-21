@@ -35,7 +35,7 @@ public class sandwichMain {
 
                     System.out.println("Current Order");
                     for (int i = 0; i < sandwichList.size(); i++) {
-                        System.out.println("Sandwich " + (i + 1) + ")"+ sandwichList.get(i) + "\nSandwich Price : $ " +  sandwichPrice +"\n");
+                        System.out.println("Sandwich " + (i + 1) + ") "+ sandwichList.get(i) + "\nSandwich Price : $ " +  sandwichPrice +"\n");
                     }
                 System.out.println( "Order Total: $ " + orderTotal );
 
@@ -53,6 +53,8 @@ public class sandwichMain {
                 System.out.println("\nThank you for using the Sandwich Factory");
             }
         private static sandwich createSandwich() {
+            System.out.println("\nCreate Sandwich");
+
             System.out.println("-".repeat(20));
 
             int sandwichSize = UI.readInt("What is the size of the sandwich in inches ?",0, 12);
