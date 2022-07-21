@@ -33,9 +33,9 @@ public class sandwichMain {
                 }
                 System.out.println("-".repeat(20));
 
-                    System.out.println("Current Order");
+                    System.out.println("Current Order \n");
                     for (int i = 0; i < sandwichList.size(); i++) {
-                        System.out.println("Sandwich " + (i + 1) + ") "+ sandwichList.get(i) + "\nSandwich Price : $ " +  sandwichPrice +"\n");
+                        System.out.println("Sandwich " + (i + 1) + ") "+ sandwichList.get(i) + "\nSandwich Price: $ " +  sandwichPrice +"\n");
                     }
                 System.out.println( "Order Total: $ " + orderTotal );
 
