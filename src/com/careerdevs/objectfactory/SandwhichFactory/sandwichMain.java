@@ -13,7 +13,7 @@ public class sandwichMain {
             System.out.println( " ".repeat(10) +"Main Menu" + " ".repeat(10));
             System.out.println("1) Create A sandwich");
             System.out.println("2) View Order");
-            System.out.println("3) Exit the program");
+            System.out.println("3) Exit the program\n");
 
             //create button options
             byte menuChoice = UI.readByte("Choose An option",(byte)1, (byte)3);
@@ -50,7 +50,7 @@ public class sandwichMain {
             System.out.println("-".repeat(20));
 
             }}
-                System.out.println("\nThank you for using the Sandwich Factory");
+                System.out.println("\nThank you for using the Sandwich Factory.");
             }
         private static sandwich createSandwich() {
             System.out.println("\nCreate Sandwich");

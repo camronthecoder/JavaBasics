@@ -50,7 +50,7 @@ public class sandwich {
     public boolean isCutType() {
         return isCut;
     }
-
+//
     public void setCutType(boolean cutType) {
         this.isCut = cutType;
     }
