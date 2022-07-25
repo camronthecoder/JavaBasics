@@ -41,6 +41,7 @@ public class sandwichMain {
 
                 System.out.println("-".repeat(20));
 
+                //s
                     }else{
             //option 1
             sandwich generatedSandwich = createSandwich();
